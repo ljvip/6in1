@@ -167,19 +167,19 @@ ${GREEN}0. 退出${NO_COLOR}"
 read -p "请输入您要执行的操作的数字:" aNum
 case $aNum in
     1)check_status
-      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/trojan-nginx-tls-b.sh)"
+      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/6in1/master/trojan-nginx-tls-b.sh)"
     ;;
     2)check_status
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/trojan-caddy-tls-b.sh)"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/6in1/master/trojan-caddy-tls-b.sh)"
       ;;
     3)check_status
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/v2ary-nginx-tls-b.sh)"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/6in1/master/v2ary-nginx-tls-b.sh)"
     ;;
     4)check_status
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/v2ary-caddy-tls-b.sh)"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/6in1/master/v2ary-caddy-tls-b.sh)"
     ;;
     5)check_status
-      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/ssr-caddy-tls-b.sh)"
+      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/6in1/master/ssr-caddy-tls-b.sh)"
     ;;
     6)check_status
       bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/Linux-NetSpeed/master/tcp.sh)"
