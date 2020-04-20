@@ -125,7 +125,7 @@ uninstall(){
               uninstall_v2ray
               uninstall_web
               uninstall_timetast
-              echo -e "${GREEN}恭喜您，卸载成功！！${NO_COLOR}"
+              echo -e "${GREEN}卸载成功！！${NO_COLOR}"
         else
               echo -e "${RED}ssr卸载失败${NO_COLOR}"
               exit
@@ -137,7 +137,7 @@ uninstall(){
         uninstall_v2ray
         uninstall_web
         uninstall_timetast
-        echo -e "${GREEN}恭喜您，卸载成功！！${NO_COLOR}"
+        echo -e "${GREEN}卸载成功！！${NO_COLOR}"
     fi
 
   else
@@ -164,7 +164,7 @@ ${GREEN}6. 安装ssr+tls+caddy
 $FUCHSIA===================================================
 ${GREEN}7. 卸载,还你一个干净的环境
 $FUCHSIA===================================================
-${GREEN}0. 啥也不做，退出${NO_COLOR}"
+${GREEN}0. 退出${NO_COLOR}"
 read -p "请输入您要执行的操作的数字:" aNum
 case $aNum in
     1)check_status
