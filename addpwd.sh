@@ -66,7 +66,7 @@ main(){
     if [ $? -eq 0 ]; then
         systemctl restart sshd.service
         /etc/init.d/sshd restart
-        echo -e "${GREEN}修改成功，请用用户名root和刚设置好的密码登录vps吧，enjoy${NO_COLOR}"
+        echo -e "${GREEN}修改成功，请用用户名root和刚设置好的密码登录vps吧，${NO_COLOR}"
     else
 	 echo -e "${RED}两次密码输入不一致,修改不成功${NO_COLOR}"
     fi
