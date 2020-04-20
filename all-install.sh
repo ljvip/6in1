@@ -1,5 +1,4 @@
 #! /bin/bash
-# Author: Jeannie
 #######color code########
 RED="\033[0;31m"
 NO_COLOR="\033[0m"
@@ -40,7 +39,7 @@ init_release(){
 check_status(){
   if [ -e "/usr/local/bin/caddy" -o -d "/usr/local/shadowsocks" -o -e "/etc/systemd/system/v2ray.service" -o -e "/usr/bin/v2ray/v2ray" -o -e "/usr/sbin/nginx"  -o -e "/usr/local/bin/trojan" -o -e "/usr/local/bin/caddy_old" -o -e "/etc/systemd/system/trojan.service" -o -e "/etc/systemd/system/caddy.service" ]; then
 	    Flag="YES"
-	    echo -e "${RED}检测到您尚未卸载，请先卸载再重装.${NO_COLOR}"
+	    echo -e "${RED}检测到您已安装过其他环境，请先卸载再重装.${NO_COLOR}"
 	    exit
 	else
 	   Flag="NO"
@@ -158,32 +157,32 @@ ${GREEN}3. 安装v2ray+tls+nginx
 $FUCHSIA===================================================
 ${GREEN}4. 安装v2ray+tls+caddy
 $FUCHSIA===================================================
-${GREEN}5. 安装ssr+tls+nginx
+${GREEN}5. 安装ssr+tls+caddy
 $FUCHSIA===================================================
-${GREEN}6. 安装ssr+tls+caddy
+${GREEN}6. 运行BBR安装脚本
 $FUCHSIA===================================================
-${GREEN}7. 卸载,还你一个干净的环境
+${GREEN}7. 卸载已安装的服务端
 $FUCHSIA===================================================
 ${GREEN}0. 退出${NO_COLOR}"
 read -p "请输入您要执行的操作的数字:" aNum
 case $aNum in
     1)check_status
-      bash -c "$(curl -fsSL https://raw.githubusercontent.com/JeannieStudio/jeannie/master/trojan-nginx-tls-b.sh)"
+      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/trojan-nginx-tls-b.sh)"
     ;;
     2)check_status
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/JeannieStudio/jeannie/master/trojan-caddy-tls-b.sh)"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/trojan-caddy-tls-b.sh)"
       ;;
     3)check_status
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/JeannieStudio/jeannie/master/v2ary-nginx-tls-b.sh)"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/v2ary-nginx-tls-b.sh)"
     ;;
     4)check_status
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/JeannieStudio/jeannie/master/v2ary-caddy-tls-b.sh)"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/v2ary-caddy-tls-b.sh)"
     ;;
-    5)echo "开发未完成，敬请期待……"
-      exit
+    5)check_status
+      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/jeannie/master/ssr-caddy-tls-b.sh)"
     ;;
     6)check_status
-      bash -c "$(curl -fsSL https://raw.githubusercontent.com/JeannieStudio/jeannie/master/ssr-caddy-tls-b.sh)"
+      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shuazijun/Linux-NetSpeed/master/tcp.sh)"
     ;;
     7)uninstall
     ;;
